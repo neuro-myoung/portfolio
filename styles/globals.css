@@ -1,16 +1,121 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;0,900;1,100;1,200;1,300&display=swap");
 
-a {
-  color: inherit;
-  text-decoration: none;
+:root {
+  --primary-bg-color: #00091a;
+  --primary-font-color: #e4e4e4;
+  --secondary-font-color: #c3c3c3;
+  --accent-color: #ffc93c;
 }
 
 * {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--primary-bg-color);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative; 
+  display: flex;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-font-color);
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 10px;
+  color: var(--secondary-font-color);
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 10px;
+  color: var(--primary-font-color);
+  font-size: 1.3rem;
+  font-weight: 300;
+  max-width: 700px;
+}
+
+p {
+  padding: 1rem 0;
+  color: var(--secondary-font-color);
+  line-height: 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+nav {
+  width: 95vw;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  gap: 3rem;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--secondary-font-color);
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--primary-font-color);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 2px;
+  background: var(--primary-font-color);
+  position: absolute;
+  top: -0.5em;
+  left: 0;
+  right: 0;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transition: -webkit-transform ease-in-out 0.25s;
+  transition: -webkit-transform ease-in-out 0.25s;
+  transition: transform ease-in-out 0.25s;
+  transition: transform ease-in-out 0.25s, -webkit-transform ease-in-out 0.25s;
+}
+
+nav a:hover::before {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.notFound {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
 }
