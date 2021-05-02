@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import About from '../components/about'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Home.module.css'
 
@@ -18,6 +19,7 @@ export default function Home() {
           <button className={styles.buttonSecondary}>Contact Me</button>
         </div>
       </div>
+      <About />
     </>
   )
 }

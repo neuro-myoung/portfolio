@@ -1,17 +1,15 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import styles from '../styles/About.module.css'
 
 const About = () => {
     return (
         <>
-            <Head>
-                <title>Mike Young | About</title>
-            </Head>
-            <div>
+            <div className={styles.content}>
                 <h1>About</h1>
                 <Image src="/profile_yellowcircle_small.png"  width={ 337 } height={ 300 } alt="profile picture"/>
-                <div class="text-block foreground">
-                    <p class="p1 fade-in slide-in from-right">
+                <div className="text-block foreground">
+                    <p className="p1 fade-in slide-in from-right">
                         I'm currently pursuing a doctorate in Neurobiology at Duke University. Broadly, I am interested in
                         how
                         cells specialize to sense
@@ -22,7 +20,7 @@ const About = () => {
                         channels play in sensing forces
                         on a cellular scale.
                     </p>
-                    <p class="p2 fade-in slide-in from-right">
+                    <p className="p2 fade-in slide-in from-right">
                         I have always had a strong motivation to learn new skills that can help make me be a more productive
                         scientist and person in general.
                         As a result, on top of my work in the lab I have built skills in general purpose programming, web
@@ -31,7 +29,7 @@ const About = () => {
                         hope
                         to make the ride from coast to coast across the US.
                     </p>
-                    <p class="p3  fade-in slide-in from-right">
+                    <p className="p3  fade-in slide-in from-right">
                         Feel free to explore my website to learn more about me and contact me if you have any questions.
                     </p>
                 </div>
