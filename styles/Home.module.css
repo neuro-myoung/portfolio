@@ -2,19 +2,20 @@
 .content {
   width: 100vw;
   height: 100vh;
-  padding-left: 100px;
-  padding-top: 5rem;
   background-image: url('/piezos_bg.png');
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  gap: 3rem;
+  align-items: center;
+  justify-items: center;
+  padding-top: 5rem;
 }
 
 .callToAction {
   height: 200px;
+  padding-top: 50px;
   -webkit-transition-delay: 1s;
           transition-delay: 1s;
 }

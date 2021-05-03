@@ -3,6 +3,7 @@
 
 :root {
   --primary-bg-color: #00091a;
+  --secondary-bg-color: #000c22;
   --primary-font-color: #e4e4e4;
   --secondary-font-color: #c3c3c3;
   --accent-color: #ffc93c;
@@ -17,17 +18,10 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   background-color: var(--primary-bg-color);
-  height: 200vh;
   width: 100vw;
-  overflow-x: hidden;
   position: relative; 
   display: flex;
-}
-
-.container {
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -64,7 +58,7 @@ p {
 
 nav {
   position: fixed;
-  width: 95vw;
+  width: 98vw;
   height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,6 +71,8 @@ nav {
           justify-content: right;
   gap: 3rem;
   list-style-type: none;
+  background-color: var(--primary-bg-color);
+  opacity: 90%;
 }
 
 nav a {
