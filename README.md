@@ -1,3 +1,5 @@
+Rewriting my portfolio website using React and NextJS as an exercise to learn both frameworks and eventually deploy using a Static Site Generator. 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
