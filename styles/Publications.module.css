@@ -64,7 +64,6 @@
     color: #00091a;
     cursor: pointer;
     transition: all 0.3s ease-in;
-    font-weight: 700;
 }
 
 .primary:hover {
