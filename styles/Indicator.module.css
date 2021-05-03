@@ -1,0 +1,62 @@
+.navMarker {
+    position: fixed;
+    height: 60vh;
+    width: 50px;
+    left: 95%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 1000;
+  }
+  
+  .circle {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-font-color);
+  }
+  
+  .mark {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-font-color);
+    -webkit-box-shadow: 
+        inset 0 0 12px var(--accent-color), 
+        inset 0 0 30px var(--primary-font-color), 
+        0 0 10px 2px var(--accent-color), 
+        0 0 30px 7px #00BFFF;
+    box-shadow: 
+        inset 0 0 12px var(--accent-color), 
+        inset 0 0 30px var(--primary-font-color), 
+        0 0 10px 2px var(--accent-color), 
+        0 0 30px 7px #00BFFF;
+    /* outer-2 */
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .mark:hover {
+    -webkit-box-shadow: inset 0 0 8px #ffc93c, inset 0 0 30px #fff, 0 0 10px 5px #ffc93c, 0 0 30px 15px #00BFFF;
+            box-shadow: inset 0 0 8px #ffc93c, inset 0 0 30px #fff, 0 0 10px 5px #ffc93c, 0 0 30px 15px #00BFFF;
+    /* outer-2 */
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  
+  .line {
+    height: 15%;
+    width: 2px;
+    background-color: var(--secondary-font-color);
+  }
